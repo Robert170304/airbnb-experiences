@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  padding: 0px 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.navbar nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menuBtn{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+  border: 1px solid rgb(220, 219, 219);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.menuBtn:hover{
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.menu-modal{
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 35px -15px rgba(0,0,0,.541);
+  left: 85%;
+  position: absolute;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: auto; 
+  z-index: 5;
+  display: block;    
+  transition: all .2s linear;
+  border-radius: 10px;
+}
+
+.menu-modal ul{
+  padding-inline-start: 0;
+}
+
+.menu-modal li{
+  list-style: none;
+  padding: 5px 20px;
+}
+
+.menu-modal .li-hover:hover{
+  background-color: #f6f6ff;
+  cursor: pointer;
+}
+
+img {
+  width: 82px;
+  height: 25px;
+}
+
+.hero{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero img{
+  width:100%;
+  height: auto;
+  max-width: 445px;
+  align-self: center;
+}
+
+.hero h1{
+  margin-top: 23px;
+  margin-bottom: 0px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  font-size: 36px;
+  padding: 0px;
+}
+.hero p{
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  color: #222222; 
+  padding: 0px 7px;
+}
+
+/*CARD CSS*/
+.card{
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  font-size: 12px;
+  position: relative;
+}
+
+.card-list{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0px 20px;
+}
+
+.card .katie-img{
+  width: 176px;
+  height: 235px;
+}
+
+.card .star{
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.gray{
+  color: #918E9B; 
+}
+
+.card-stats{
+  display: flex;
+  align-items: center; 
+  font-weight: 300;
+  font-size: 12px;
+}
+.card-info{
+  height: auto;
+  padding: 5px 0px;
+}
+
+.card-info h6{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 5px 0px;
+}
+.card-info h6 span{
+  font-weight: 300;
+} 
+.card-text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+}
+.card-badge{
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+@media (max-width: 550px) {
+  .menu-modal{
+    top: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-modal{
+    left: 50%;
+  }
+}
